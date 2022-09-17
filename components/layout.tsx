@@ -5,8 +5,10 @@ const Layout: React.FC<Prop.Children> = ({children}) => {
   return (
     <div>
       <header>Header</header>
-      <aside>Sidebar</aside>
-      <main>{children}</main>
+      <div className="container flex">
+        <aside>Sidebar</aside>
+        <main>{children}</main>
+      </div>
       <footer>Footer</footer>
     </div>
   );
